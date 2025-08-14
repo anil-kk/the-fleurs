@@ -1,3 +1,6 @@
+
+import Header from "@/components/shared/header";
+
 export const metadata = {
     title: 'Home',
 };
@@ -9,7 +12,8 @@ export default function RootLayout({
 }>) {
     return (
         <div className="flex h-screen flex-col">
-            <main className="flex-1 wrapper bg-slate-100">
+            <Header></Header>
+            <main className="flex-1 wrapper">
                 {children}</main>
         </div>
     );

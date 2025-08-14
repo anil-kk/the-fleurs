@@ -26,7 +26,7 @@ export default function MainLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased bg-blue-200`}
+        className={`${inter.className} antialiased`}
       >
         {children}
       </body>
