@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Next gen store",
 };
 
-export default function RootLayout({
+export default function MainLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased`}
+        className={`${inter.className} antialiased bg-blue-200`}
       >
         {children}
       </body>
