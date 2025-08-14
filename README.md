@@ -27,6 +27,8 @@ npm install
 
 ```bash
 npx shadcn@latest init # base color Slate, creates components.json, lib\utils.ts
+# add shadcv components
+npx shadcn@latest add button
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
