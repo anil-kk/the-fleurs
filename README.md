@@ -21,6 +21,14 @@ npm update
 npm install
 ```
 
+# UI
+
+- [Shadcn](https://ui.shadcn.com/docs/installation/next)
+
+```bash
+npx shadcn@latest init # base color Slate, creates components.json, lib\utils.ts
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
