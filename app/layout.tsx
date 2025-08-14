@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import '@/assets/styles/globals.css';
+import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -9,8 +10,8 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
-  title: "Fleurs App",
-  description: "Next gen store",
+  title: APP_NAME,
+  description: APP_DESCRIPTION,
 };
 
 export default function MainLayout({
