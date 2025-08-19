@@ -20,7 +20,7 @@ const Header = () => {
             <Button asChild variant="ghost">
                 <Link href="/cart"> <ShoppingCartIcon /> Cart</Link>
             </Button>
-            <Button asChild variant="ghost">
+            <Button asChild >
                 <Link href="/login"> <UserIcon /> Login</Link>
             </Button>
         </div>
