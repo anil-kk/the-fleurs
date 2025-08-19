@@ -21,6 +21,19 @@ npm update
 npm install
 ```
 
+
+#DB
+
+Created a free Neon serverless Postgre db at https://vercel.com/
+
+Install and confiqure Prisma ORM](https://www.prisma.io/docs/guides/nextjs#2-install-and-configure-prisma)
+
+```
+npm install prisma tsx --save-dev
+npm install @prisma/extension-accelerate @prisma/client
+
+npx prisma init
+```
 # UI
 
 - [Shadcn](https://ui.shadcn.com/docs/installation/next)
