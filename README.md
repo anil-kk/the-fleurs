@@ -29,8 +29,16 @@ npm install
 npx shadcn@latest init # base color Slate, creates components.json, lib\utils.ts
 # add shadcv components
 npx shadcn@latest add button
+npx shadcn@latest add dropdown-menu
 ```
 
+## Themes
+- [dark theme][(https://ui.shadcn.com/docs/installation/next](https://ui.shadcn.com/docs/dark-mode/next))
+
+```bash
+npm install next-themes
+
+```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
