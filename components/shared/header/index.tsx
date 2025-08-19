@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { APP_NAME } from "@/lib/constants";
+import ThemeToggle from "@/components/theme-toggle";
 
 
 const Header = () => {
@@ -17,6 +18,9 @@ const Header = () => {
         </div>
 
         <div className="flex-end">
+
+            <ThemeToggle></ThemeToggle>
+
             <Button asChild variant="ghost">
                 <Link href="/cart"> <ShoppingCartIcon /> Cart</Link>
             </Button>
