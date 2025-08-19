@@ -1,5 +1,10 @@
+import ProductList from "@/components/shared/product/product-list";
+import sampleData from "@/db/sample-data";
+
 const HomePagee = () => {
-  return (<div>Root
+  return (<div>
+
+    <ProductList data={sampleData.products} title="Sample Products" limit={4} />
   </div>);
 }
 
