@@ -30,9 +30,18 @@ Install and confiqure Prisma ORM](https://www.prisma.io/docs/guides/nextjs#2-ins
 
 ```
 npm install prisma tsx --save-dev
-npm install @prisma/extension-accelerate @prisma/client
+npm install @prisma/client
 
 npx prisma init
+```
+
+
+```bash
+npx prisma generate
+
+npx prisma migrate dev --name init
+
+npx prisma studio
 ```
 # UI
 
