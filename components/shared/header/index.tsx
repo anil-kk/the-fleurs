@@ -17,7 +17,7 @@ const Header = () => {
             </Link>
         </div>
 
-        <div className="flex-end">
+        <div className="flex-end space-x-1">
 
             <ThemeToggle></ThemeToggle>
 
