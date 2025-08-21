@@ -38,7 +38,7 @@ npm install prisma tsx --save-dev
 npm install @prisma/client
 
 npx prisma init
-npx prisma init --datasource-provider postgresql --output ../lib/generated/prisma
+npx prisma init --datasource-provider postgresql
 ```
 
 ```bash

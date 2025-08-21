@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "schema": "tsx lib/update-schema.tsx",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "seed": "tsx db/seed"
   },
   "dependencies": {
     "@prisma/client": "^6.14.0",
