@@ -9,7 +9,9 @@ async function main() {
 
   await prisma.product.createMany({ data: sampleData.products });
 
-  console.log("Sample data seeded successfully");
+  console.log(
+    `Sample data seeded successfull!\n ${sampleData.products.length} products created.`
+  );
 }
 
 main();
