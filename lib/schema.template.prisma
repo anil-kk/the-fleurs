@@ -12,7 +12,7 @@ generator client {
 datasource db {
     provider = "postgresql"
     url      = env("DATABASE_URL")
-    schemas  = ["qa"]
+    schemas  = ["SCHEMA_PLACEHOLDER"]
 }
 
 model Product {
@@ -34,6 +34,6 @@ model Product {
     createdBy   String?
     modifiedBy  String?
 
-    @@map("qa_products")
-    @@schema("qa")
+    @@map("TABLE_PREFIX_PLACEHOLDERproducts")
+    @@schema("SCHEMA_PLACEHOLDER")
 }
