@@ -16,13 +16,18 @@ bun dev
 
 # update packages
 
-````bash
+```bash
 npm update
 npm install
 ```
 
-
 #DB
+
+## local postgres db
+
+```bash
+docker run --name my-postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=pa55word -e POSTGRES_DB=thefleursdb -p 5432:5432 -v db_data:/var/lib/postgresql/data -d postgres:latest
+```
 
 Created a free Neon serverless Postgre db at https://vercel.com/
 
@@ -33,16 +38,22 @@ npm install prisma tsx --save-dev
 npm install @prisma/client
 
 npx prisma init
+npx prisma init --datasource-provider postgresql --output ../lib/generated/prisma
 ```
-
 
 ```bash
 npx prisma generate
 
-npx prisma migrate dev --name init
+npx prisma migrate dev --name initial
 
 npx prisma studio
+
+
+npx prisma migrate deploy --schema=./prisma/schema.prisma
+#You may use prisma migrate reset to drop the development database.
+npx prisma migrate reset
 ```
+
 # UI
 
 - [Shadcn](https://ui.shadcn.com/docs/installation/next)
@@ -57,12 +68,14 @@ npx shadcn@latest add card
 ```
 
 ## Themes
+
 - [dark theme][(https://ui.shadcn.com/docs/installation/next](https://ui.shadcn.com/docs/dark-mode/next))
 
 ```bash
 npm install next-themes
 
 ```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
@@ -84,18 +97,20 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-
-
 # VS Code extensions
 
- - prettier code formatter
- - eslint
- - prisma ORM
- - simple react snippets
- - tailwind css intellisense
- - javascript (es6) code snippets
- - markdown preview enhanced
+- prettier code formatter
+- eslint
+- prisma ORM
+- simple react snippets
+- tailwind css intellisense
+- javascript (es6) code snippets
+- markdown preview enhanced
 
 # Updated reference code
+
 - [tailwind4](https://github.com/bradtraversy/prostore/tree/tailwind4)
-````
+
+```
+
+```
